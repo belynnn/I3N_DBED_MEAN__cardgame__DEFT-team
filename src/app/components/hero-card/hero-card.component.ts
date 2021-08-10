@@ -26,10 +26,15 @@ export class HeroCardComponent implements OnInit {
       )
       //ligne 24 : le super héro est récupéré et stockée dans la variable
   }
+
+  // Pour chercher l'image
+  // Ici on fait en sort que chaque héro qui a une durability "null"
+  // reçoit une image par défaut
   public setDefaultImage(html:HTMLImageElement) {
     html.src="https://freesvg.org/img/genericsuperhero.png"
   }
 
+  // 
   public getHealth(hero:SuperHeroCard) {
     hero.durability += 10;
   }
