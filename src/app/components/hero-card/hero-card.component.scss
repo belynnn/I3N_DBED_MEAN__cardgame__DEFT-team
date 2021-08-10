@@ -1,0 +1,102 @@
+.card {
+  background-color: rgb(194, 46, 78);
+  color: whitesmoke;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 10px;
+  }
+  
+  .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.514);
+  background-color: rgb(194, 46, 78);
+  }
+  
+  .card-container {
+  padding: 2px 16px;
+  }
+
+  .card-back{
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    padding-top: 550px;
+  }
+
+  .button{
+    font-size: 1.5rem;
+    width: 150px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 25px;
+}
+
+
+
+
+
+
+// ********************************************************************************* //
+//                              FLIPBOX
+// ********************************************************************************* //
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 500px;
+  // border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(360deg);
+}
+.flip-box input {
+  display: none;
+}
+.flip-box:hover input {
+  display: inline-block;
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.defenseEffect{
+  border: 5px solid blue;
+}
+
+/* Style the front side (fallback if image is missing) */
+// .flip-box-front {
+//   background-color: #bbb;
+//   color: black;
+// }
+
+/* Style the back side */
+.flip-box-back {
+  background-image: url("https://cdn.discordapp.com/attachments/240109541650464779/874393174758551603/bang3.jpg");
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 650px;
+  border-radius: 10px;
+}

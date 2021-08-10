@@ -1,0 +1,33 @@
+<!-- Implémentation des div pour la flipbox qui permet de tourner les cartes quand on passe par dessus -->
+<ng-container *ngIf="superhero">
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+
+            <!-- Centrage des cartes -->
+            <div class="center">
+                    <div [ngClass]="{'card':true, defenseEffect:superhero.isDefense}">
+                        <!-- evenement on error enclanche la méthode permettant de définir un nouveau src. -->
+                        <img style="width: 100%" [src]="superhero.image" (error)="setDefaultImage(image)" #image>
+                        <div class="card-container">
+                        <h2>{{ superhero.name }}</h2>
+                            <p>Points de vie : {{ superhero.durability }}</p>
+                            <p>Force : {{ superhero.strength }}</p>
+                            <p>Vitesse : {{ superhero.speed }}</p>
+                        </div>
+                    </div>
+                    <input class="button" type="button" value="Attaquer ⚔️"> <input class="button" type="button" value="Défense 🛡️" (click)="superhero.defense()"> <input class="button" type="button" value="Potions 🧪" (click)="getHealth(superhero)">
+            </div>
+
+
+        </div>
+        <!-- Implémentation des div pour la flipbox qui permet de tourner les cartes quand on passe par dessus -->
+        <div class="flip-box-back">                
+                <div class="card-back">
+                </div>
+        </div>
+        
+    </div>
+
+</div> 
+</ng-container>

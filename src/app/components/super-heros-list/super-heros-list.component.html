@@ -1,0 +1,51 @@
+<header>
+    <div class="inscription-connexion">
+        <input class="button-inscription-connexion" type="button" value="Inscription">
+        <input class="button-inscription-connexion" type="button" value="Connexion">
+    </div>
+    <div class="space">
+        <div class="color">
+
+            <h1>HEROES BATTLE</h1>
+            <h2>Devenez le héros vous rêviez d'être</h2>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="color-body">
+        <div class="center">
+            <ol>
+                <h3>Joueur 1</h3>
+                <li class="center" *ngFor="let id of ids_team1">
+                    <!-- <app-heros-details [heros]="heros"></app-heros-details> -->
+                    <app-hero-card [id]="id">
+    
+                    </app-hero-card>
+                </li>
+            </ol>
+        </div>
+        <div class="center">
+            <ol>
+                <h3 class="h3j2">Joueur 2</h3>
+                <li *ngFor="let id2 of ids_team2">
+                    <!-- <app-heros-details [heros]="heros"></app-heros-details> -->
+                    <app-hero-card [id]="id2">
+    
+                    </app-hero-card>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+<footer class="center">
+    <div class="color">
+        <p>Projet réalisé par la team DEFT, avec Tatiana, Elliot, Flora et Déborah.</p>
+        <p>Avec l'aide de notre formateur Samuel Legrain, du centre de formation Cognitic.be.</p>
+        <p>Pendant une formation "Développeur Back-End Orienté Data" offerte par Interface3.Namur, avec le soutient de notre tuteur Sébastien Vanwynsberghe.</p>
+    </div>
+</footer>
+
+<!-- pour tester le on error card :  -->
+<!-- <app-hero-card [id]="290"></app-hero-card> -->
+

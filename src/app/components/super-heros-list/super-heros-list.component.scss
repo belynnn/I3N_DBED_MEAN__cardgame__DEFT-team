@@ -1,0 +1,104 @@
+header{
+    background-color: rgb(194, 46, 78);
+}
+
+.space{
+    width: 100%;
+    height: 250px;
+    background-image: url("https://cdn.discordapp.com/attachments/240109541650464779/874403669834076272/fancy-pants.jpg");
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(194, 46, 78);
+    font-size: 7rem;
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke: 4px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(194, 46, 78);
+    font-size: 3rem;
+    font-weight: 300;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    font-family: 'Bangers', cursive;
+}
+
+h3{
+    text-align: center;
+    color: #0199ff;
+    font-weight: 300;
+    font-size: 5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-text-stroke: 4px rgb(0, 0, 0);
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    font-family: 'Bangers', cursive;
+}
+.h3j2{
+    text-align: center;
+    color: #3cff01;
+    font-weight: 300;
+    font-size: 5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-text-stroke: 4px rgb(0, 0, 0);
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    font-family: 'Bangers', cursive;
+}
+
+.center{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+
+}
+
+p{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.color{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 30, 30);
+    color: blanchedalmond;
+    padding: 2%;
+    background-image: url("https://cdn.discordapp.com/attachments/240109541650464779/874403669834076272/fancy-pants.jpg");
+}
+
+.color-body{
+    background-image: url("https://previews.123rf.com/images/tomo00/tomo001609/tomo00160900416/63421287-wallpaper-materials-intensive-line-cartoon-manga-comics-anime-f-dashi-balloon-lines-lines-copy-space.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.button{
+    font-size: 1.8rem;
+    width: 25%;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 25px;
+}
+
+.button-inscription-connexion{
+    align-content: right;
+    margin: 5px;
+    width: 100px;
+}
+
+.inscription-connexion{
+    float: right;
+}
